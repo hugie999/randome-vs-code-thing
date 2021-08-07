@@ -1,4 +1,4 @@
-from io import open_code
+from io import IncrementalNewlineDecoder, open_code
 
 
 
@@ -46,6 +46,20 @@ if qu == ("Y") or qu == ("y"):
     if qu == ("1"):
         print ("good job")
 
+        print("question 2")
+        print ("is dis a good quis")
+        print ("yes (1) or no (2)")
+        qu = input(":")
+        if qu == ("1"):
+            print ("correcct")
+    
+        elif qu == ("2"):
+            print ("incorect")
+        
+        else:
+            print ("error [100]")
+        
+    
     elif qu == ("2"):
     
         print ("incorect")
@@ -53,5 +67,9 @@ if qu == ("Y") or qu == ("y"):
     else:
         print("error [100]")
         exit()
+    
+     
+ 
+        
 elif qu == ("N") or qu == ("n"):
     print ("ok :(")
